@@ -9,7 +9,7 @@
     --color2: #535a5c;
     --color3: #802222ab;
 }
-
+/* Header */
 header {
     padding:35px 45px;
     background-color: var(--color1);
@@ -49,7 +49,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
 }
-
+/* Footer */
 footer {
     background: var(--color3);
     width: 100%;
@@ -58,8 +58,11 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+/* About Me */
 .about-me {
+    background-image: url("../images/image3.jpg");
+    background-size: cover;
+    background-position: left;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -67,9 +70,32 @@ footer {
 }
 
 .about-me div img {
-    padding: 0 20px 5px 200px;
+    size: 80%;
+    padding: 0 20px 50px 200px;
+}
+/* Projects */
+.projects {
+    display: flex;
+    justify-content: center;
+
 }
 
+.projects .primary-project a img {
+    width: 90%;
+}
+/* Contact */
+.contact {
+    width: 100%;
+    background: var(--color2);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+}
+
+.contact .contact-form h3 {
+    text-align: center;
+}
+/* Mediaqueries */
 @media screen and (max-width: 980px) {
 
 }
