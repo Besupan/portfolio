@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #92557dab;
+    --color2: #535a5c;
+    --color3: #802222ab;
+}
+
+header {
+    padding:35px 45px;
+    background-color: var(--color1);
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    color: var(--color3);
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(0,0,0, 0.75);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color3);
+    text-shadow: 0 0 3px rgba(0,0,0, 0.75);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+}
+
+footer {
+    background: var(--color3);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color: var(--color2);
+}
+
+.about-me div img {
+    padding: 0 20px 5px 200px;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
