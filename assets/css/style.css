@@ -5,9 +5,10 @@
 }
 
 :root {
-    --color1: #92557dab;
+    --color1: #ffffffab;
     --color2: #535a5c;
     --color3: #802222ab;
+    --color4: #125e9cc0;
 }
 /* Header */
 header {
@@ -51,7 +52,7 @@ header nav ul li a {
 }
 /* Footer */
 footer {
-    background: var(--color3);
+    background: var(--color4);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -71,17 +72,44 @@ footer {
 
 .about-me div img {
     size: 80%;
-    padding: 0 20px 50px 200px;
+    padding: 24px 20px 24px 200px;
+}
+
+.about-me div p {
+    width: 40%;
 }
 /* Projects */
 .projects {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    background-color: var(--color4);
+}
 
+.projects .primary-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .projects .primary-project a img {
-    width: 90%;
+    width: auto;
+}
+
+.projects .secondary-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.projects .secondary-projects div {
+    width: 200px;
+}
+
+.projects .secondary-projects div a img {
+    width:100%;
 }
 /* Contact */
 .contact {
@@ -94,6 +122,11 @@ footer {
 
 .contact .contact-form h3 {
     text-align: center;
+}
+
+.contact .links address a {
+    text-decoration: none;
+    color: var(--color1);
 }
 /* Mediaqueries */
 @media screen and (max-width: 980px) {
