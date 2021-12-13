@@ -5,7 +5,10 @@
 * Html
 * CSS
 
+![Screenshot](./assets/images/Screenshot-2021-Portfolio.png)
+
 ## Website
+https://besupan.github.io/portfolio/
 
 ## Contribution
 Made with hands by Brett Dickson
