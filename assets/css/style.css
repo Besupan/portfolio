@@ -6,7 +6,7 @@
 
 :root {
     --color1: #ffffffab;
-    --color2: #535a5c;
+    --color2: #1a2c31;
     --color3: #802222ab;
     --color4: #125e9cc0;
 }
@@ -14,7 +14,7 @@
 header {
     padding:35px 45px;
     background-color: var(--color1);
-    background-image: url("../images/image1.jpg");
+    background-image: url("../images/image3.jpg");
     background-size: cover;
     background-position: 80%;
     display: flex;
@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-    color: var(--color3);
+    color: var(--color4);
     font-size: 32px;
     margin: 0;
     text-shadow: 0 0 5px rgba(0,0,0, 0.75);
@@ -35,7 +35,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--color3);
+    color: var(--color4);
     text-shadow: 0 0 3px rgba(0,0,0, 0.75);
 }
 
@@ -54,29 +54,49 @@ header nav ul li a {
 footer {
     background: var(--color4);
     width: 100%;
-    padding: 40px 35px;
+    padding: 30px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-shadow: 0 0 3px rgba(0,0,0, 0.75);
 }
 /* About Me */
 .about-me {
-    background-image: url("../images/image3.jpg");
+    background-image: url("../images/image1.jpg");
     background-size: cover;
     background-position: left;
     display: flex;
-    justify-content: left;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: var(--color2);
 }
 
+.about-me div {
+    padding: 24px 20px 24px 20px;
+}
 .about-me div img {
-    size: 80%;
-    padding: 24px 20px 24px 200px;
+    border-radius: 10px;
 }
 
-.about-me div p {
-    width: 40%;
+.about-me .info {
+    padding: 20px 40px 0px 20px;
+    background-color: var(--color1);
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+}
+
+.about-me .info h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.about-me .info p {
+    font-size: 16px;
+}
+
+.about-me .info p, .about-me .info h3 {
+    width: 400px;
+    color: var(--color2);
 }
 /* Projects */
 .projects {
@@ -95,6 +115,7 @@ footer {
 
 .projects .primary-project a img {
     width: auto;
+    border-radius: 10px;
 }
 
 .projects .secondary-projects {
@@ -110,6 +131,7 @@ footer {
 
 .projects .secondary-projects div a img {
     width:100%;
+    border-radius: 10px;
 }
 /* Contact */
 .contact {
@@ -120,8 +142,50 @@ footer {
     padding: 10px 15px;
 }
 
+.contact .contact-form {
+    background-color: var(--color4);
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.contact .contact-form form textarea,
+.contact .contact-form form input {
+    color: var(--color4);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.contact .contact-form form button {
+    width: 100%;
+    border: none;
+    background: var(--color1);
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px 10px 5px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+}
+
+.contact .contact-form form button:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
 .contact .contact-form h3 {
     text-align: center;
+    color: var(--color1);
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(0,0,0, 0.75);
+}
+
+.contact .links address {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .contact .links address a {
@@ -129,14 +193,14 @@ footer {
     color: var(--color1);
 }
 /* Mediaqueries */
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width: 1068px) {
+    .projects .secondary-projects {
+        flex-wrap: nowrap;
+    }
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 575px) {
-
+@media screen and (max-width: 796px) {
+    .projects .secondary-projects {
+        flex-wrap: wrap;
+    }
 }
